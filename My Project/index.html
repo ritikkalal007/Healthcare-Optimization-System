@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Optimization System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Healthcare Optimization System</h1>
+    <div id="app">
+        <h2>Patient Appointment Scheduling</h2>
+        <form id="patient-form">
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            <br>
+            <label for="appointment-type">Appointment Type:</label>
+            <select name="appointment-type" id="appointment-type">
+                <option value="general">General Checkup</option>
+                <option value="urgent">Urgent Care</option>
+                <option value="follow-up">Follow-up Appointment</option>
+            </select>
+            <br>
+            <label for="preferred-date">Preferred Date:</label>
+            <input type="date" id="preferred-date" name="preferred-date" required>
+            <br>
+            <label for="recording">Enable Recording (for future replay):</label>
+            <input type="checkbox" id="recording" name="recording">
+            <br>
+            <label for="notes">Additional Notes (optional):</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Provide any additional details for your appointment"></textarea>
+            <br>
+            <button type="submit">Schedule Appointment</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
